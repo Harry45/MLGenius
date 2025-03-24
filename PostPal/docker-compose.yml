@@ -1,0 +1,26 @@
+version: '3s'
+
+services:
+  ppapi:
+    build: ppapi/
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    volumes:
+      - ./ppapi:/code:ro
+    environment:
+      - DATABASE_URL="postgresql://postgres:admin@db:5432/PostPal"
+
+  db:
+      image: postgres:15-alpine
+      volumes:
+        - postgres_data:/var/lib/postgresql/data/
+      ports:
+        - "5432:5432"
+      environment:
+        - POSTGRES_USER=postgres
+        - POSTGRES_PASSWORD=admin
+        - POSTGRES_DB=PostPal
+volumes:
+      postgres_data:

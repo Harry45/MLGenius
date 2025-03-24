@@ -1,0 +1,10 @@
+input_shape:
+- 1
+- 28
+- 28
+num_patches: 7
+num_blocks: 2
+embed_dim: 8
+num_heads: 2
+num_classes: 10
+lr: 0.005

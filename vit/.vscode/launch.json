@@ -1,0 +1,12 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Train and evaluate ViT",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "./src.py",
+            "console": "integratedTerminal"
+        }
+    ]
+}

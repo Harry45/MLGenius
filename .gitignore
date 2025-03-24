@@ -1,3 +1,15 @@
+DiffusionTimepiece/data/
+
+NLPGenius/data/
+NLPGenius/models/
+
+GalaxyGenius/data/
+GalaxyGenius/models/
+GalaxyGenius/images/
+GalaxyGenius/prompts/
+
+vit/datasets/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
